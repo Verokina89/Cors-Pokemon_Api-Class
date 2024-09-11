@@ -1,0 +1,1 @@
+# Cors-Pokemon_Api-Class
