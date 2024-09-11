@@ -8,7 +8,7 @@ function getPokemonInfo() {
     const pokemonName = pokemonNameInput.value.toLocaleLowerCase();
 
     //Utilizamos Fetch para pasa la url cn el id pokemonName
-    fetch (`http://localhost:3002/pokemon/${pokemonName}`)
+    fetch (`http://localhost:3001/pokemon/${pokemonName}`)
         .then(response => response.json())   //la respuesta en json para pasar luego los datos
         .then(data => {  //Pasan los datos de la misma manera que el   destructuring del back.
             const {name, sprites: {front_default}, height, weight} = data;

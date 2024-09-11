@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const axios = require('axios');
 const cors = require('cors');
-const PORT = 3002;
+const PORT = 3001;
 
 //Middleware cors para que todas nuestras rutas pasen por este crosOrigin y permitan la entrada
 app.use(cors());
@@ -25,6 +25,6 @@ app.get('/pokemon/:pokemonName', async (req, res) => {        //ruta para obtene
 })  //Se genera la asincronia; espera la respusta que da la API para poder adquirir datos y trabajarlo luego. Para el control de rrores se utiliza el TRY y el  CATCH
 
 app.listen(PORT, () => {
-    console.log(`express esta en el puerto http://localhost:${PORT}`);
+    console.log(`express esta en el puerto http://localhost:${PORT}/pokemon/pikachu`);
     
 }) 
