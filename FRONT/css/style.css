@@ -43,3 +43,30 @@ table {
 }
 
 /*---CODE---*/
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 100%;
+	height: 400px;
+	gap: 20px;
+	background-image: ('https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/sword-shield/pokemon-in-the-wild.png');
+}
+
+h1{
+	font-size: 50px;
+	box-shadow: ;
+}
+
+#pokemonInfo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgb(104, 105, 104);
+	color: rgb(247, 247, 244);
+	border-radius: 10px;
+	box-shadow: -14px 21px 3px 0px rgba(14, 13, 13, 0.66);
+}
